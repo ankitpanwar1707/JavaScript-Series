@@ -7,7 +7,7 @@ const newNums = myNums.filter( (num) => {
     return num>4
 })
     console.log(newNums); // [ 5, 6, 7, 8, 9, 10 ]
- console.log("filter");
+ 
 
 
 
