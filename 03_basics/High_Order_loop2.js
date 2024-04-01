@@ -54,3 +54,23 @@ myCoding.forEach((item) =>{
 // java
 // CPP
 // python
+console.log("*********************************************************************");
+
+const codingLang = ["js","ruby","java","python","cpp"]
+
+const values = coding.forEach( (item) =>{
+      console.log(item);
+
+      // Output
+      // js
+      // ruby
+     // cpp
+     // python
+     // c
+     // java
+
+})
+
+console.log(values);// undefined
+
+// For Each loop not return any value, only show output " undefined ".
