@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Chai aur javaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalid;
+    //setInterval execute function body after a fixed interval like 1000.2000 msec.
+  const start = document.querySelector("#start").addEventListener('click',function(){
+    const sayDate = () => {
+        console.log("Ankit Panwar",Date.now());
+    }
+    intervalid = setInterval(sayDate,1000);
+  });
+
+  const stop = document.querySelector("#stop")
+  stop.addEventListener('click',()=>{
+    clearInterval(intervalid);
+  })
+   
+
+
+</script>
+</html>
