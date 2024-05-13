@@ -13,16 +13,23 @@ let b=10
 
 // ***********************************Hoisting ***********************************************************
 
-// Hoisting refers to the process whereby the interpreter appers to more the declaration to the top of the code
-// before execution
+// Hoisting refers to the process in which we call function or varible before declaration and definition.
 
-// greet()
-let greet= () => {
-    console.log("Good Morning");
+// Function Definition and Function Declaration
+
+hi()
+
+function hi(){
+    console.log('Hello'); //Output:Hello   
 }
 
+sayHi()
 
-//hoist declarations, not initialization
+//Function Definition and Function Expression
+
+var sayHi = function(){
+    console.log('Hiii'); //Output: Getting Error or undefined,because in the Function Expression form (sayHi) treat as a varible . If we use "var" for defined function getting undefined or if use "let or const" for defined function getting error. 
+}
 
 
 
